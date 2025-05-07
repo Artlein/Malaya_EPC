@@ -58,27 +58,6 @@ body {
     margin-right: 10px;
 }
 
-.nav-buttons a {
-    text-decoration: none; /* Removes the underline */
-}
-
-.nav-buttons button {
-    background: none;
-    border: none;
-    color: white;
-    text-align: left;
-    font-size: 12px;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.nav-buttons a.active button {
-    color: #f4c542;
-    font-weight: bold;
-}
 
 /* Content Pane */
 .content-area {
@@ -87,7 +66,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
+
 .top-bar {
     position: sticky;
     top: 0;
@@ -96,9 +75,11 @@ body {
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    color: #000;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #fcfcfc;
 }
+
 
 .hamburger {
     background: none;

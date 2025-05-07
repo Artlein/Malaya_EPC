@@ -13,34 +13,24 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Malaya Solar Energies Inc.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
     <link href="css/ms_dashboard.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="images/Malaya_Logo.png" type="image/png">
+
 </head>
 <body>
-    <div class="sidebar" id="sidebar">
-        <div class="logo">
-            <img src="Malaya_Logo.png" alt="Logo"> Malaya Sol <br>Accounting System
-        </div>
-        <div class="nav-buttons">
-            <a href="ms_dashboard.php"><button>Dashboard</button></a>
-            <a href="ms_projects.php"><button>Projects</button></a>
-            <a href="ms_assets.php"><button>Assets</button></a>
-            <a href="ms_expenses.php"><button>Expenses</button></a>
-            <a class="active" href="ms_workforce.php"><button>Workforce</button></a>
-            <a href="ms_payroll.php"><button>Payroll</button></a>
-            <a href="ms_vendors.php"><button>Vendors</button></a>
-            <a href="ms_reports.php"><button>Reports</button></a>
-        </div>
+<div class="sidebar" id="sidebar">
+        <?php include 'sidebar.php'; ?>
     </div>
     
     <div class="content-area">
         <!-- Header Section -->
         <header class="top-bar">
             <button class="hamburger" id="toggleSidebar">☰</button>
-            <h2 class="page-title">WORKFORCE</h2>
+            <h2 class="page-title">EXPENSES</h2>
             
             <div class="user-dropdown">
                 <button class="user-icon" id="userDropdownBtn">
